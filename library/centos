@@ -4,11 +4,21 @@ Directory: docker
 Constraints: !aufs
 
 Tags: latest, centos7, 7
-GitFetch: refs/heads/CentOS-7
-GitCommit: 16dab97b0ce72b1db7a2f9b02c76e452cb0a63cb
+Architectures: amd64, arm64v8
+amd64-GitFetch: refs/heads/CentOS-7
+amd64-GitCommit: 16dab97b0ce72b1db7a2f9b02c76e452cb0a63cb
 arm64v8-GitFetch: refs/heads/CentOS-7-aarch64
 arm64v8-GitCommit: d8521aa559c767d815e9bb05f7d05ea8ab781930
-Architectures: amd64, arm64v8
+
+Tags: amd64-latest, amd64-7
+Architectures: amd64
+amd64-GitFetch: refs/heads/CentOS-7
+amd64-GitCommit: 16dab97b0ce72b1db7a2f9b02c76e452cb0a63cb
+
+Tags: arm64v8-latest, arm64v8-7
+Architectures: arm64v8
+arm64v8-GitFetch: refs/heads/CentOS-7-aarch64
+arm64v8-GitCommit: d8521aa559c767d815e9bb05f7d05ea8ab781930
 
 Tags: centos6, 6
 GitFetch: refs/heads/CentOS-6
